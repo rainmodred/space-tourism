@@ -16,6 +16,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
             rel="stylesheet"
           />
+          <link rel="shortcut icon" href="/favicon-32x32.png" />
         </Head>
         <body>
           <Main />
