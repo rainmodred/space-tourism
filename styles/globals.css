@@ -49,3 +49,13 @@ h6 {
 body {
   font-family: 'Barlow Condensed', sans-serif;
 }
+
+.bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-home {
+  background-image: url(/home/background-home-desktop.jpg);
+}
