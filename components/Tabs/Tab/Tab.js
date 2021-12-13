@@ -11,7 +11,7 @@ export function Tab({ children, tabIndex }) {
       onClick={() => onSelect(tabIndex)}
       data-tab=""
       data-selected={isSelected ? '' : undefined}
-      aria-selected="true"
+      aria-selected={isSelected}
       role="tab"
       aria-controls="moon-tab"
       tabIndex={isSelected ? 0 : -1}
