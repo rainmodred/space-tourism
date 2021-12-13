@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { TabsProvider } from './useTabs';
 import styles from './Tabs.module.css';
 
@@ -15,7 +15,6 @@ export function Tabs({ children, orientation = 'horizontal' }) {
     >
       <div
         data-tabs=""
-        role="tablist"
         className={`${styles.tabs} ${
           orientation === 'vertical' ? styles.vertical : ''
         }`}
