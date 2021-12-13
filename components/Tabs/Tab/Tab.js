@@ -1,4 +1,4 @@
-import { useTabs } from '../useTabs';
+import { makeId, useTabs } from '../useTabs';
 import styles from './Tab.module.css';
 
 export function Tab({ children, tabIndex }) {
@@ -13,7 +13,7 @@ export function Tab({ children, tabIndex }) {
       data-selected={isSelected ? '' : undefined}
       aria-selected={isSelected}
       role="tab"
-      aria-controls="moon-tab"
+      aria-controls={makeId('tab', tabIndex)}
       tabIndex={isSelected ? 0 : -1}
       className={`${isSelected ? styles.selected : ''}`}
     >

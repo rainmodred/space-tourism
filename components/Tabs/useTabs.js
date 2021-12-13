@@ -14,3 +14,7 @@ export function useTabs() {
 
   return context;
 }
+
+export function makeId(name, index) {
+  return `tabs--${name}--${index}`;
+}
