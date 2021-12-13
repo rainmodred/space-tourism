@@ -24,7 +24,7 @@ export function Tab({ children, tabIndex }) {
       role="tab"
       aria-controls={makeId('tab', tabIndex)}
       tabIndex={isSelected ? 0 : -1}
-      className={`${isSelected ? styles.selected : ''}`}
+      className={` ${styles.tab} ${isSelected ? styles.selected : ''}`}
       ref={ref}
     >
       {children}

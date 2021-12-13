@@ -1,3 +1,7 @@
+.tab {
+  cursor: pointer;
+}
+
 .selected {
   border: none;
   background-color: salmon;
