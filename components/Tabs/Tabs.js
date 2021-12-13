@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { TabsProvider } from './useTabs';
 import styles from './Tabs.module.css';
 
