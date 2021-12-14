@@ -14,10 +14,16 @@ export default function Layout({ children }) {
   const { pathname } = useRouter();
 
   useEffect(() => {
-    if (pathname == '/') {
-      setBodyClass('bg-home');
-    } else if (pathname == '/destination') {
-      setBodyClass('bg-destination');
+    switch (pathname) {
+      case '/destination':
+        setBodyClass('bg-destination');
+        break;
+      case '/crew':
+        setBodyClass('bg-crew');
+        break;
+
+      default:
+        setBodyClass('bg-home');
     }
   }, [pathname]);
 
