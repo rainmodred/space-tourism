@@ -4,7 +4,7 @@
   align-items: center;
   height: 100%;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .title {
@@ -48,7 +48,7 @@
   transform: scale(1);
 }
 
-@media (max-width: 80em) {
+@media (max-width: 48em) {
   .container {
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@
   }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 35em) {
   .container {
     justify-content: space-around;
   }
