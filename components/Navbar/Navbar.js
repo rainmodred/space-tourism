@@ -49,8 +49,8 @@ export default function Navbar() {
               </a>
             </Link>
           </li>
-          <li className={isActive('')}>
-            <Link href="/">
+          <li className={isActive('/crew')}>
+            <Link href="/crew">
               <a className={styles.link}>
                 <span className={styles.number}>02</span> crew
               </a>
