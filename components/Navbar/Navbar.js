@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <Link href="/">
-        <a>
+        <a className={styles.logoLink}>
           <Image src="/shared/logo.svg" width="48" height="48" alt="logo" />
         </a>
       </Link>
@@ -39,8 +39,8 @@ export default function Navbar() {
               </a>
             </Link>
           </li>
-          <li className={isActive('')}>
-            <Link href="/">
+          <li className={isActive('/destination')}>
+            <Link href="/destination">
               <a className={styles.link}>
                 <span className={styles.number}>01</span> destination
               </a>
