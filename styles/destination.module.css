@@ -85,6 +85,10 @@
     row-gap: 53px;
   }
 
+  .infoText {
+    padding-bottom: 49px;
+  }
+
   .imageWrapper {
     max-width: 300px;
   }
@@ -95,6 +99,7 @@
   }
 
   .meta {
+    padding-top: 32px;
     justify-content: center;
   }
 }
@@ -102,5 +107,15 @@
 @media (max-width: 35em) {
   .imageWrapper {
     max-width: 170px;
+  }
+
+  .infoText {
+    padding-bottom: 32px;
+  }
+
+  .meta {
+    padding-top: 32px;
+    flex-direction: column;
+    row-gap: 32px;
   }
 }
