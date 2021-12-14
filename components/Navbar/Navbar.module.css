@@ -5,6 +5,10 @@
   padding: 40px 0 0 55px;
 }
 
+.logoLink {
+  flex-shrink: 0;
+}
+
 .menuButton {
   display: none;
   background: none;
@@ -22,14 +26,14 @@
 .nav {
   backdrop-filter: blur(81.5485px);
   z-index: 1;
+  padding-inline: clamp(3rem, 7vw, 7rem);
 }
 
 .menu {
   display: flex;
   list-style-type: none;
   gap: 48px;
-  padding-right: 165px;
-  padding-left: 123px;
+  padding-left: 0;
 }
 
 .item:hover {
@@ -54,9 +58,13 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 48em) {
   .header {
     padding: 0 0 0 39px;
+  }
+
+  .nav {
+    padding-inline: 0;
   }
 
   .menu {
@@ -73,7 +81,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 35em) {
   .header {
     padding: 20px 20px 0 20px;
   }
