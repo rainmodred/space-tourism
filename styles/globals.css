@@ -12,13 +12,19 @@
 * {
   margin: 0;
 }
-html,
+/* html,
 body,
 body > div:first-child,
 div#__next,
 div#__next > div {
   height: 100%;
+} */
+
+body,
+div#__next {
+  min-height: 100vh;
 }
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -55,6 +61,7 @@ h6 {
 
 body {
   font-family: 'Barlow Condensed', sans-serif;
+  color: var(--color-white);
 }
 
 .fs-5xl {
@@ -118,7 +125,7 @@ body {
 }
 
 .color-light {
-  color: var(--color-ligth);
+  color: var(--color-light);
 }
 
 .color-white {
@@ -139,18 +146,34 @@ body {
   background-image: url(/home/background-home-desktop.jpg);
 }
 
-@media screen and (max-width: 1279px) {
+.bg-destination {
+  background-image: url(/destination/background-destination-desktop.jpg);
+}
+
+@media screen and (max-width: 48em) {
   .bg-home {
     background-image: url(/home/background-home-tablet.jpg);
   }
+
+  .bg-destination {
+    background-image: url(/destination/background-destination-tablet.jpg);
+  }
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    overflow-y: hidden !important;
-  }
-
+@media screen and (max-width: 35em) {
   .bg-home {
     background-image: url(/home/background-home-mobile.jpg);
   }
+
+  .bg-destination {
+    background-image: url(/destination/background-destination-mobile.jpg);
+  }
+}
+
+[data-tab] {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  letter-spacing: 2.7px;
+  padding: 0;
 }

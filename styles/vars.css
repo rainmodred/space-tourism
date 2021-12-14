@@ -1,6 +1,6 @@
 :root {
   --color-black: rgba(11, 13, 23, 1);
-  --color-ligth: rgba(208, 214, 249, 1);
+  --color-light: rgba(208, 214, 249, 1);
   --color-white: rgba(255, 255, 255, 1);
   --color-grey: #979797;
 
@@ -14,10 +14,10 @@
   --fs-sm: 0.875rem;
 }
 
-@media (max-width: 80em) {
+@media (max-width: 48em) {
   :root {
-    /* --fs-4xl: 6.25rem;
-    --fs-3xl: 3.5rem;
+    --fs-4xl: 5rem;
+    /* --fs-3xl: 3.5rem;
     --fs-2xl: 2rem;*/
     --fs-xl: 1.25rem;
     --fs-lg: 1rem;
@@ -26,10 +26,10 @@
   }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 35em) {
   :root {
-    /* --fs-4xl: 6.25rem;
-    --fs-3xl: 3.5rem;
+    --fs-4xl: 3.5rem;
+    /*--fs-3xl: 3.5rem;
     --fs-2xl: 2rem;*/
     --fs-xl: 1rem;
     --fs-lg: 0.9375rem;
