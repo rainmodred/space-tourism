@@ -1,13 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { TabsProvider } from './useTabs';
 import styles from './Tabs.module.css';
 
-export function Tabs({ children, orientation = 'horizontal' }) {
+export function Tabs({ children, orientation = 'horizontal', onChange }) {
   const [selectedTabIndex, setSelectedTabIndex] = useState(0);
 
   function handleSelect(index) {
     setSelectedTabIndex(index);
   }
+
+  useEffect(() => {
+    onChange(selectedTabIndex);
+  }, [selectedTabIndex, onChange]);
 
   return (
     <TabsProvider
