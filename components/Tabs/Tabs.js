@@ -10,6 +10,9 @@ export function Tabs({ children, orientation = 'horizontal', onChange }) {
   }
 
   useEffect(() => {
+    if (!onChange || typeof onChange !== 'function') {
+      return;
+    }
     onChange(selectedTabIndex);
   }, [selectedTabIndex, onChange]);
 
