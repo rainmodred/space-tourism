@@ -1,17 +1,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
-  const router = useRouter();
+  const { pathname } = useRouter();
 
-  const isActive = path =>
-    path === router.pathname ? styles.active : styles.item;
+  const isActive = path => (path === pathname ? styles.active : styles.item);
 
   const [menuOpened, setMenuOpened] = useState(false);
+
+  useEffect(() => {
+    setMenuOpened(false);
+  }, [pathname]);
 
   const menuButtonStyles = `${styles.menuButton} ${
     menuOpened ? styles.menuButton__opened : ''

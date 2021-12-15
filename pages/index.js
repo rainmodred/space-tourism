@@ -1,9 +1,10 @@
 import classNames from 'classnames';
+import Link from 'next/link';
 import styles from '../styles/home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <div className={styles.title}>
         <h1
           className={classNames(
@@ -36,9 +37,11 @@ export default function Home() {
           experience!
         </p>
       </div>
-      <div>
-        <a className={classNames(styles.link, 'uppercase')}>explore</a>
+      <div className={styles.linkWrapper}>
+        <Link href="/destination">
+          <a className={classNames(styles.link, 'uppercase')}>explore</a>
+        </Link>
       </div>
-    </div>
+    </>
   );
 }

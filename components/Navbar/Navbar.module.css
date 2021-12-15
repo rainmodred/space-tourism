@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 40px 0 0 55px;
+  grid-area: navigation;
 }
 
 .logoLink {
@@ -34,6 +35,10 @@
   list-style-type: none;
   gap: 48px;
   padding-left: 0;
+}
+
+.item {
+  border-bottom: 3px solid transparent;
 }
 
 .item:hover {
