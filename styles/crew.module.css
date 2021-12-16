@@ -1,0 +1,138 @@
+.heading {
+  grid-area: heading;
+}
+
+.headingSpan {
+  opacity: 0.25;
+  font-weight: 700;
+  margin-right: 28px;
+}
+
+.imageWrapper {
+  grid-area: image;
+  align-self: end;
+  max-width: 90%;
+}
+
+.infoText {
+  padding-top: 27px;
+  color: var(--color-light);
+}
+
+.tabsWrapper {
+  grid-area: info;
+  max-width: 490px;
+}
+
+.tabPanelHeading {
+  line-height: 1.1;
+  margin-bottom: 14px;
+  opacity: 0.5;
+}
+
+.tabsWrapper [data-tabs] {
+  row-gap: 120px;
+}
+
+.tabsWrapper [data-tab-list] > * {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-grey);
+  opacity: 0.17;
+}
+
+.tabsWrapper [data-selected] {
+  background-color: var(--color-white) !important;
+  border-bottom: none !important;
+  opacity: 1;
+}
+
+.tabsWrapper [data-tab-list] {
+  column-gap: 24px;
+  order: 1;
+}
+
+.tabsWrapper [data-tab] {
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+
+.tabsWrapper [data-selected] {
+  border-bottom: 3px solid white;
+  background: none;
+}
+
+.meta {
+  padding-top: 28px;
+  border-top: 1px solid #383b4b;
+  display: flex;
+  text-transform: uppercase;
+  gap: 79px;
+}
+
+.metaHeading {
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 2.36px;
+  color: var(--color-light);
+}
+
+.metaText {
+  font-size: 1.75rem;
+}
+
+@media (max-width: 48em) {
+  .heading {
+    justify-self: start;
+    margin-bottom: 60px;
+  }
+
+  .tabsWrapper [data-tabs] {
+    align-items: center;
+    text-align: center;
+    row-gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .tabsWrapper [data-tab-list] > * {
+    width: 10px;
+    height: 10px;
+  }
+
+  .infoText {
+    padding: 16px 0 0 0;
+  }
+
+  .meta {
+    padding-top: 32px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 35em) {
+  .heading {
+    justify-self: center;
+    margin-bottom: 32px;
+  }
+
+  .imageWrapper {
+    border-bottom: 3px solid #383b4b;
+    align-self: center;
+  }
+
+  .infoText {
+    padding-bottom: 32px;
+  }
+
+  .meta {
+    padding-top: 32px;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  .tabsWrapper [data-tab-list] {
+    column-gap: 24px;
+    order: 0;
+  }
+}

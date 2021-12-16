@@ -10,10 +10,7 @@ import titan from '../public/destination/image-titan.webp';
 import { Tabs, TabList, TabPanels, TabPanel, Tab } from '../components/Tabs/';
 import { useState } from 'react';
 
-function getImage(index) {
-  const images = [moon, mars, europa, titan];
-  return images[index];
-}
+const images = [moon, mars, europa, titan];
 
 export default function Destination() {
   const [imageIndex, setImageIndex] = useState(0);
@@ -30,7 +27,7 @@ export default function Destination() {
 
       <div className={styles.imageContainer}>
         <div className={styles.imageWrapper}>
-          <Image src={getImage(imageIndex)} alt="moon planet" />
+          <Image src={images[imageIndex]} alt="moon planet" />
         </div>
       </div>
       <div className={styles.tabsWrapper}>
