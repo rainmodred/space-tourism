@@ -1,0 +1,29 @@
+.heading {
+  grid-area: heading;
+}
+
+.tabsWrapper {
+  grid-area: info;
+}
+
+.imageWrapper {
+  grid-area: image;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+@media (max-width: 48em) {
+  .heading {
+    margin-bottom: 60px;
+  }
+
+  .imageWrapper {
+    margin-inline: -38px;
+    max-height: 310px;
+  }
+}
+
+@media (max-width: 35em) {
+}

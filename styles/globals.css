@@ -163,6 +163,18 @@ body {
   background-image: url(/technology/background-technology-desktop.jpg);
 }
 
+.vehicle-image {
+  background-image: url(/technology/image-launch-vehicle-portrait.jpg);
+}
+
+.capsule-image {
+  background-image: url(/technology/image-space-capsule-portrait.jpg);
+}
+
+.spaceport-image {
+  background-image: url(/technology/image-spaceport-portrait.jpg);
+}
+
 @media screen and (max-width: 48em) {
   .bg-home {
     background-image: url(/home/background-home-tablet.jpg);
@@ -178,6 +190,18 @@ body {
 
   .bg-tech {
     background-image: url(/technology/background-technology-tablet.jpg);
+  }
+
+  .vehicle-image {
+    background-image: url(/technology/image-launch-vehicle-landscape.jpg);
+  }
+
+  .capsule-image {
+    background-image: url(/technology/image-space-capsule-landscape.jpg);
+  }
+
+  .spaceport-image {
+    background-image: url(/technology/image-spaceport-landscape.jpg);
   }
 }
 
