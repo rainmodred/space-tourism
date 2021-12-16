@@ -56,8 +56,8 @@ export default function Navbar() {
               </a>
             </Link>
           </li>
-          <li className={isActive('')}>
-            <Link href="/">
+          <li className={isActive('/technology')}>
+            <Link href="/technology">
               <a className={styles.link}>
                 <span className={styles.number}>03</span> technology
               </a>

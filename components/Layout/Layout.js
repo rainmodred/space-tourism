@@ -21,6 +21,9 @@ export default function Layout({ children }) {
       case '/crew':
         setBodyClass('bg-crew');
         break;
+      case '/technology':
+        setBodyClass('bg-tech');
+        break;
 
       default:
         setBodyClass('bg-home');
@@ -33,6 +36,8 @@ export default function Layout({ children }) {
         return classNames(styles.main, styles.mainDestination);
       case '/crew':
         return classNames(styles.main, styles.mainCrew);
+      case '/technology':
+        return classNames(styles.main, styles.mainTech);
       default:
         return classNames(styles.main, styles.mainHome);
     }

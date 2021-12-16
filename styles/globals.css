@@ -159,6 +159,10 @@ body {
   background-image: url(/crew/background-crew-desktop.jpg);
 }
 
+.bg-tech {
+  background-image: url(/technology/background-technology-desktop.jpg);
+}
+
 @media screen and (max-width: 48em) {
   .bg-home {
     background-image: url(/home/background-home-tablet.jpg);
@@ -170,6 +174,10 @@ body {
 
   .bg-crew {
     background-image: url(/crew/background-crew-tablet.jpg);
+  }
+
+  .bg-tech {
+    background-image: url(/technology/background-technology-tablet.jpg);
   }
 }
 
@@ -184,6 +192,10 @@ body {
 
   .bg-crew {
     background-image: url(/crew/background-crew-mobile.jpg);
+  }
+
+  .bg-tech {
+    background-image: url(/technology/background-technology-mobile.jpg);
   }
 }
 
