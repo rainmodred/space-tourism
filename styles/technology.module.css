@@ -44,6 +44,10 @@
   color: var(--color-black);
 }
 
+.tabPanelHeading {
+  margin-top: 11px;
+}
+
 .infoText {
   margin-top: 1rem;
   max-width: 445px;
