@@ -24,11 +24,22 @@
   background: url('/shared/icon-close.svg') no-repeat;
 }
 
+.line {
+  height: 1px;
+  background-color: var(--color-grey);
+  width: 100%;
+  margin-right: -30px;
+  margin-left: 64px;
+  opacity: 0.25;
+  z-index: 100;
+}
+
 .nav {
   backdrop-filter: blur(81.5485px);
   background-color: rgba(255, 255, 255, 0.05);
   z-index: 1;
   padding-inline: clamp(3rem, 7vw, 7rem);
+  position: relative;
 }
 
 @supports not (backdrop-filter: blur()) {
@@ -73,6 +84,10 @@
 @media screen and (max-width: 48em) {
   .header {
     padding: 0 0 0 39px;
+  }
+
+  .line {
+    display: none;
   }
 
   .nav {

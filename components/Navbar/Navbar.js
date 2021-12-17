@@ -29,6 +29,8 @@ export default function Navbar() {
         </a>
       </Link>
 
+      <div className={styles.line}></div>
+
       <button
         className={menuButtonStyles}
         onClick={() => setMenuOpened(!menuOpened)}
