@@ -5,7 +5,7 @@
   --color-grey: #979797;
 
   --fs-5xl: clamp(5rem, 8vw + 1rem, 9.375rem);
-  --fs-4xl: 6.25rem;
+  --fs-4xl: clamp(5rem, 8vw, 6.25rem);
   --fs-3xl: 3.5rem;
   --fs-2xl: 2rem;
   --fs-xl: 1.75rem;

@@ -229,10 +229,15 @@ body {
   }
 }
 
-[data-tab] {
+[data-reach-tab] {
   background: none;
   border: none;
   color: var(--color-white);
   letter-spacing: 2.7px;
   padding: 0;
+}
+
+[data-reach-tabs] {
+  display: flex;
+  flex-direction: column;
 }

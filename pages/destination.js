@@ -7,7 +7,7 @@ import mars from '../public/destination/image-mars.webp';
 import europa from '../public/destination/image-europa.webp';
 import titan from '../public/destination/image-titan.webp';
 
-import { Tabs, TabList, TabPanels, TabPanel, Tab } from '../components/Tabs/';
+import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@reach/tabs';
 import { useState } from 'react';
 
 const images = [moon, mars, europa, titan];

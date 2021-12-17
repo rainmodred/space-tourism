@@ -24,11 +24,11 @@
   opacity: 0.5;
 }
 
-.tabsWrapper [data-tabs] {
+.tabsWrapper [data-reach-tabs] {
   row-gap: 120px;
 }
 
-.tabsWrapper [data-tab-list] > * {
+.tabsWrapper [data-reach-tab-list] > * {
   border-radius: 50%;
   width: 15px;
   height: 15px;
@@ -42,12 +42,12 @@
   opacity: 1;
 }
 
-.tabsWrapper [data-tab-list] {
+.tabsWrapper [data-reach-tab-list] {
   column-gap: 24px;
   order: 1;
 }
 
-.tabsWrapper [data-tab] {
+.tabsWrapper [data-reach-tab] {
   text-transform: uppercase;
   padding-bottom: 12px;
 }
@@ -82,14 +82,18 @@
     margin-bottom: 60px;
   }
 
-  .tabsWrapper [data-tabs] {
+  .imageWrapper {
+    max-width: 60%;
+  }
+
+  .tabsWrapper [data-reach-tabs] {
     align-items: center;
     text-align: center;
     row-gap: 40px;
     margin-bottom: 40px;
   }
 
-  .tabsWrapper [data-tab-list] > * {
+  .tabsWrapper [data-reach-tab-list] > * {
     width: 10px;
     height: 10px;
   }
@@ -111,8 +115,11 @@
   }
 
   .imageWrapper {
-    border-bottom: 3px solid #383b4b;
     align-self: center;
+  }
+
+  .imageWrapper > * {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1) !important;
   }
 
   .infoText {
@@ -125,7 +132,7 @@
     row-gap: 32px;
   }
 
-  .tabsWrapper [data-tab-list] {
+  .tabsWrapper [data-reach-tab-list] {
     column-gap: 24px;
     order: 0;
   }

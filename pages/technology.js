@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import styles from '../styles/technology.module.css';
-import { Tabs, TabList, TabPanels, TabPanel, Tab } from '../components/Tabs/';
+import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@reach/tabs';
 
 const images = ['vehicle-image', 'spaceport-image', 'capsule-image'];
 
@@ -17,8 +17,6 @@ export default function Technology() {
       setOriientation('horizontal');
     }
   }, []);
-
-  console.log('orientation', orientation);
 
   function onChange(index) {
     setImageIndex(index);

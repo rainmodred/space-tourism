@@ -2,7 +2,7 @@ import { useState } from 'react';
 import classNames from 'classnames';
 import Image from 'next/image';
 import styles from '../styles/crew.module.css';
-import { Tabs, TabList, TabPanels, TabPanel, Tab } from '../components/Tabs/';
+import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@reach/tabs';
 
 import ansari from '../public/crew/image-anousheh-ansari.webp';
 import hurley from '../public/crew/image-douglas-hurley.webp';
