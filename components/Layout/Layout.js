@@ -33,11 +33,15 @@ export default function Layout({ children }) {
   const createMainClassnames = () => {
     switch (pathname) {
       case '/destination':
-        return classNames(styles.main, styles.mainDestination);
+        return classNames(
+          styles.main,
+          styles.mainCommon,
+          styles.mainDestination,
+        );
       case '/crew':
-        return classNames(styles.main, styles.mainCrew);
+        return classNames(styles.main, styles.mainCommon, styles.mainCrew);
       case '/technology':
-        return classNames(styles.main, styles.mainTech);
+        return classNames(styles.main, styles.mainCommon, styles.mainTech);
       default:
         return classNames(styles.main, styles.mainHome);
     }
