@@ -54,7 +54,7 @@ export default function Destination() {
               >
                 moon
               </h2>
-              <p className={classNames('fs-lg', styles.infoText)}>
+              <p className={classNames('fs-lg', 'color-light')}>
                 See our planet as you&apos;ve never seen it before. A perfect
                 relaxing trip away to help regain perspective and come back
                 refreshed. While you&apos;re there, take in some history by
@@ -87,7 +87,7 @@ export default function Destination() {
               >
                 mars
               </h2>
-              <p className={classNames('fs-lg', styles.infoText)}>
+              <p className={classNames('fs-lg', 'color-light')}>
                 Don&apos;t forget to pack your hiking boots. You&apos;ll need
                 them to tackle Olympus Mons, the tallest planetary mountain in
                 our solar system. It&apos;s two and a half times the size of
@@ -120,7 +120,7 @@ export default function Destination() {
               >
                 europa
               </h2>
-              <p className={classNames('fs-lg', styles.infoText)}>
+              <p className={classNames('fs-lg', 'color-light')}>
                 The smallest of the four Galilean moons orbiting Jupiter, Europa
                 is a winter lover&apos;s dream. With an icy surface, it&apos;s
                 perfect for a bit of ice skating, curling, hockey, or simple
@@ -153,7 +153,7 @@ export default function Destination() {
               >
                 titan
               </h2>
-              <p className={classNames('fs-lg', styles.infoText)}>
+              <p className={classNames('fs-lg', 'color-light')}>
                 See our planet as you&apos;ve never seen it before. A perfect
                 relaxing trip away to help regain perspective and come back
                 refreshed. While you&apos;re there, take in some history by
