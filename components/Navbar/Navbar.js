@@ -38,28 +38,40 @@ export default function Navbar() {
           <li className={isActive('/')}>
             <Link href="/">
               <a className={styles.link}>
-                <span className={styles.number}>00</span> home
+                <span aria-hidden="true" className={styles.number}>
+                  00
+                </span>{' '}
+                home
               </a>
             </Link>
           </li>
           <li className={isActive('/destination')}>
             <Link href="/destination">
               <a className={styles.link}>
-                <span className={styles.number}>01</span> destination
+                <span aria-hidden="true" className={styles.number}>
+                  01
+                </span>{' '}
+                destination
               </a>
             </Link>
           </li>
           <li className={isActive('/crew')}>
             <Link href="/crew">
               <a className={styles.link}>
-                <span className={styles.number}>02</span> crew
+                <span aria-hidden="true" className={styles.number}>
+                  02
+                </span>{' '}
+                crew
               </a>
             </Link>
           </li>
           <li className={isActive('/technology')}>
             <Link href="/technology">
               <a className={styles.link}>
-                <span className={styles.number}>03</span> technology
+                <span aria-hidden="true" className={styles.number}>
+                  03
+                </span>{' '}
+                technology
               </a>
             </Link>
           </li>

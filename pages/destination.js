@@ -22,7 +22,10 @@ export default function Destination() {
   return (
     <>
       <h1 className={classNames(styles.heading, 'letter-spacing-1')}>
-        <span className={styles.headingSpan}>01</span> pick your destination
+        <span aria-hidden="true" className={'heading-number'}>
+          01
+        </span>
+        pick your destination
       </h1>
 
       <div className={styles.imageContainer}>

@@ -28,11 +28,14 @@ export default function Crew() {
           'letter-spacing-1',
         )}
       >
-        <span className={styles.headingSpan}>02</span> Meet your crew
+        <span aria-hidden="true" className={'heading-number'}>
+          02
+        </span>
+        Meet your crew
       </h1>
 
       <div className={styles.imageWrapper}>
-        <Image src={images[imageIndex]} alt="moon planet" />
+        <Image src={images[imageIndex]} alt="crew member image" />
       </div>
 
       <div className={styles.tabsWrapper}>

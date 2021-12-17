@@ -6,12 +6,6 @@
   justify-self: start;
 }
 
-.headingSpan {
-  opacity: 0.25;
-  font-weight: 700;
-  margin-right: 28px;
-}
-
 .info {
   /* margin-top: 64px; */
   display: flex;

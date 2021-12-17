@@ -2,12 +2,6 @@
   grid-area: heading;
 }
 
-.headingSpan {
-  opacity: 0.25;
-  font-weight: 700;
-  margin-right: 28px;
-}
-
 .imageWrapper {
   grid-area: image;
   align-self: end;
