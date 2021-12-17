@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Navbar from '../Navbar/Navbar';
 
+import Head from 'next/head';
+
 import styles from './Layout.module.css';
 
 function setBodyClass(newClass) {
@@ -47,12 +49,25 @@ export default function Layout({ children }) {
     }
   };
 
+  function getTitle(pathname) {
+    if (pathname === '/') {
+      return 'Home';
+    }
+
+    return pathname.slice(1);
+  }
+
   let mainClassnames = createMainClassnames();
 
   return (
-    <div className={styles.layout}>
-      <Navbar />
-      <main className={mainClassnames}>{children}</main>
-    </div>
+    <>
+      <Head>
+        <title>{getTitle(pathname)}</title>
+      </Head>
+      <div className={styles.layout}>
+        <Navbar />
+        <main className={mainClassnames}>{children}</main>
+      </div>
+    </>
   );
 }
