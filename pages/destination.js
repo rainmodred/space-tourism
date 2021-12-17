@@ -55,10 +55,10 @@ export default function Destination() {
                 moon
               </h2>
               <p className={classNames('fs-lg', styles.infoText)}>
-                See our planet as you’ve never seen it before. A perfect
+                See our planet as you&apos;ve never seen it before. A perfect
                 relaxing trip away to help regain perspective and come back
-                refreshed. While you’re there, take in some history by visiting
-                the Luna 2 and Apollo 11 landing sites.
+                refreshed. While you&apos;re there, take in some history by
+                visiting the Luna 2 and Apollo 11 landing sites.
               </p>
               <div className={styles.meta}>
                 <div>
@@ -88,9 +88,10 @@ export default function Destination() {
                 mars
               </h2>
               <p className={classNames('fs-lg', styles.infoText)}>
-                Don’t forget to pack your hiking boots. You’ll need them to
-                tackle Olympus Mons, the tallest planetary mountain in our solar
-                system. It’s two and a half times the size of Everest!
+                Don&apos;t forget to pack your hiking boots. You&apos;ll need
+                them to tackle Olympus Mons, the tallest planetary mountain in
+                our solar system. It&apos;s two and a half times the size of
+                Everest!
               </p>
               <div className={styles.meta}>
                 <div>
@@ -121,9 +122,9 @@ export default function Destination() {
               </h2>
               <p className={classNames('fs-lg', styles.infoText)}>
                 The smallest of the four Galilean moons orbiting Jupiter, Europa
-                is a winter lover’s dream. With an icy surface, it’s perfect for
-                a bit of ice skating, curling, hockey, or simple relaxation in
-                your snug wintery cabin.
+                is a winter lover&apos;s dream. With an icy surface, it&apos;s
+                perfect for a bit of ice skating, curling, hockey, or simple
+                relaxation in your snug wintery cabin.
               </p>
               <div className={styles.meta}>
                 <div>
@@ -153,10 +154,10 @@ export default function Destination() {
                 titan
               </h2>
               <p className={classNames('fs-lg', styles.infoText)}>
-                See our planet as you've never seen it before. A perfect
+                See our planet as you&apos;ve never seen it before. A perfect
                 relaxing trip away to help regain perspective and come back
-                refreshed. While you're there, take in some history by visiting
-                the Luna 2 and Apollo 11 landing sites.
+                refreshed. While you&apos;re there, take in some history by
+                visiting the Luna 2 and Apollo 11 landing sites.
               </p>
               <div className={styles.meta}>
                 <div>
